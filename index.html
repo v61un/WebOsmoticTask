@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Form</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Employee</div>
+
+            <div class="card">
+                <div class="card-header">Add Employee</div>
+                <div class="card-body">
+                    <form id="employeeForm">
+                        <div class="form-group">
+                            <label for="name"><strong>Name:</strong></label>
+                            <input type="text" id="name" required minlength="4" maxlength="20">
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Gender:</strong></label>
+                            <input type="radio" name="gender" value="Male" required> Male
+                            <input type="radio" name="gender" value="Female" required> Female
+                        </div>
+                        <div class="form-group">
+                            <label for="dob"><strong>Date of birth:</strong></label>
+                            <input type="date" id="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><strong>Email:</strong></label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><strong>Phone:</strong></label>
+                            <input type="text" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label><strong>Hobbies:</strong></label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" value="Cricket"> Cricket</label>
+                                <label><input type="checkbox" value="Chess"> Chess</label>
+                                <label><input type="checkbox" value="Music"> Music</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="title">Basic</div>
+            <div class="card">
+                <div class="card-header">Display</div>
+                <div class="card-body">
+                    <table id="basicTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>DOB</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Gender</th>
+                                <th>Hobbies</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Basic Table Content -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="title">Advanced</div>
+            <div class="card">
+                <div class="card-header">Display</div>
+                <div class="card-body">
+                    <table id="advancedTable">
+                        <tbody>
+                            <!-- Advanced Table Content -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
